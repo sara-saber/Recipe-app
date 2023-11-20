@@ -309,7 +309,7 @@ p {
 }
 
 .card_img {
-    border-top-left-radius:30px ;
+    border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     aspect-ratio: 1/1;
     z-index: 1;
@@ -406,11 +406,12 @@ p {
         font-size: 1rem;
     }
 
-    .offcanvas-header h5 a{
+    .offcanvas-header h5 a {
         color: #157691;
         text-decoration: none;
         font-size: 20px;
     }
+
     /* h5{
         font-size: 1rem;
     } */
@@ -445,11 +446,13 @@ p {
         align-items: center;
         background-color: #242526;
     }
+
     .card_img {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         aspect-ratio: 2/3;
     }
+
     .card {
         border-radius: 20px;
         margin: 10% 8%;
@@ -457,6 +460,7 @@ p {
         align-items: center;
         background-color: #ebece9;
     }
+
     .wrapperdiv {
         display: block;
     }
@@ -606,7 +610,7 @@ input:hover {
 @media screen and (min-width:426px) {
     .wrapper .logo a {
         color: #f2f2f2;
-        font-size: 17px;
+        font-size: 14px;
         font-weight: 600;
         text-decoration: none;
     }
@@ -647,19 +651,22 @@ input:hover {
     .submit-btn .input-data {
         width: 40% !important;
     }
+
     .card_img {
-        aspect-ratio: 3/3; 
+        aspect-ratio: 3/3;
 
     }
 }
 
 .recipe-table {
+    overflow: scroll;
     padding: 5px;
     background-color: #ffffff;
     width: 100%;
     box-shadow: beige;
     box-shadow: 3px 4px 18px 0px #1576
 }
-.recipe-table th{
+
+.recipe-table th {
     width: 1%;
 }

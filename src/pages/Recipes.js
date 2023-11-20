@@ -40,7 +40,7 @@ const Recipes = () => {
     return (
         <div className="content" >
             <div style={{ position: "relative", padding: '5%' }}>
-                <div className="recipe-table">
+                <div className="table recipe-table">
                     <table style={{ position: "relative" }} className="table table-striped">
                         <thead>
                             <tr>
