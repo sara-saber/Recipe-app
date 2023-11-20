@@ -5,8 +5,6 @@ import useFetchData from "../components/shared/useFetchData";
 import RecipeItem from "../components/Recipetable/RecipeItem";
 import RecipeModal from "../components/Recipetable/RecipeModal"
 const Recipes = () => {
-
-
     const { data: recipes, setData: setRecipes } = useFetch('http://localhost:3001/Recipe')
     const [change, setChange] = useState(false)
     const { get } = useFetchData()
@@ -40,8 +38,8 @@ const Recipes = () => {
         setChange(true)
     }
     return (
-        <div>
-            <div style={{ position: "absolute", padding: '5%' }}>
+        <div className="content" >
+            <div style={{ position: "relative", padding: '5%' }}>
                 <div className="recipe-table">
                     <table style={{ position: "relative" }} className="table table-striped">
                         <thead>

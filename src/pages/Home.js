@@ -8,9 +8,6 @@ const Home = () => {
     const { data: recipes, err: errorMessage } = useFetch('http://localhost:3001/Recipe')
     const { deleteItem } = useDelete()
     const removeItem = (id) => {
-        console.log(recipes)
-        const filteredRecipes = recipes.filter(x => x.id != id)
-        console.log(filteredRecipes)
         deleteItem('http://localhost:3001/Recipe/', id).then()
     }
     return (

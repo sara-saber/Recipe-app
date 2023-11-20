@@ -654,10 +654,9 @@ input:hover {
 }
 
 .recipe-table {
+    padding: 5px;
     background-color: #ffffff;
     width: 100%;
-    position: relative;
-    margin: 1% 1%;
     box-shadow: beige;
     box-shadow: 3px 4px 18px 0px #1576
 }
