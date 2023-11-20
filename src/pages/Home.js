@@ -15,12 +15,11 @@ const Home = () => {
     }
     return (
         <div>
-            <div className="row">
+            <div className="row mx-0">
                 {recipes ?
                     recipes.map((recipe) => (
                         <div className="col-6 col-sm-6 col-md-4 col-lg-3">
                             <RecipeCard deleteItem={removeItem} title={recipe.title} description={recipe.description} id={recipe.id} ></RecipeCard>
-                            {/* <RecipeCard  title={recipe.title} description={recipe.description} id={recipe.id} ></RecipeCard> */}
                         </div>
                     ))
                     : null}

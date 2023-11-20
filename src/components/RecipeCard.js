@@ -9,14 +9,13 @@ const RecipeCard = (prop) => {
 
     return (
         <Card className="card_item" key={prop.id}>
-            <Card.Img  className="card_img" variant="top" src="https://m.media-amazon.com/images/I/81GSugDA8AL._SL1500_.jpg" />
+            <Card.Img className="card_img" variant="top" src="https://m.media-amazon.com/images/I/81GSugDA8AL._SL1500_.jpg" />
             <Card.Body className="card_body">
                 <Card.Title className="card_title">{prop.title}</Card.Title>
                 <Card.Text className="card_text">
                     {prop.description}
                 </Card.Text>
                 <Link className="card_link" to={`/details/${prop.id}`} > Learn more</Link>
-                {/* <button style={{color:'#fff',backgroundColor:'#02474d'}} type="button" className="btn btn-dark w-100" onClick={()=>prop.deleteItem(prop.id)} >Delete</button> */}
             </Card.Body>
         </Card>
 
