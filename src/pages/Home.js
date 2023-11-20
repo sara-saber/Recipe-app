@@ -16,7 +16,7 @@ const Home = () => {
                 {recipes ?
                     recipes.map((recipe) => (
                         <div className="col-6 col-sm-6 col-md-4 col-lg-3">
-                            <RecipeCard deleteItem={removeItem} title={recipe.title} description={recipe.description} id={recipe.id} ></RecipeCard>
+                            <RecipeCard key={recipe.id} deleteItem={removeItem} title={recipe.title} description={recipe.description} id={recipe.id} ></RecipeCard>
                         </div>
                     ))
                     : null}
