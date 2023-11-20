@@ -9,6 +9,11 @@ input::selection{
 input:hover{
   border: 1px solid #aa2c52;
 }
+
+.textarea {
+  background-color: #ebf1f3;
+  text-align: left;
+}
 /* .content {
   padding-top: 1%;
   position: absolute;

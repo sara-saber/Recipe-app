@@ -38,7 +38,7 @@ const Recipes = () => {
         setChange(true)
     }
     return (
-        <div className="content" >
+        <>
             <div style={{ position: "relative", padding: '5%' }}>
                 <div className="table recipe-table">
                     <table style={{ position: "relative" }} className="table table-striped">
@@ -73,7 +73,7 @@ const Recipes = () => {
             <div>
                 <RecipeModal recipe={recipe} setRecipe={setRecipe} updateRecipe={updateRecipe}></RecipeModal>
             </div>
-        </div>
+        </>
     );
 }
 

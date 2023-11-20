@@ -23,8 +23,8 @@ const AddRecipe = () => {
         history.push('/home')
     }
     return (
-        <div className="content">
-            <div style={{marginTop:'8%'}} className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <>
+            <div style={{ marginTop: '8%' }} className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog">
                     <div className="modal-content">
                         <div className="modal-header">
@@ -49,19 +49,18 @@ const AddRecipe = () => {
                             <div className="mb-3 col-12  col-md-6 col-lg-6">
                                 <label className="form-label">Recipe Title</label>
                                 <input required placeholder="title" value={title} onChange={e => setTitle(e.target.value)} type="text" className=" border-color form-control" aria-label="Sizing example input" />
-
                             </div>
                             <div className="mb-3 col-12  col-md-6 col-lg-6">
                                 <label className="form-label">Recipe Decription</label>
-                                <input required placeholder="Description" value={description} onChange={e => setDescription(e.target.value)} type="text" className="form-control border-color" />
+                                <textarea required placeholder="Description" value={description} onChange={e => setDescription(e.target.value)} class="border-color textarea form-control" ></textarea>
                             </div>
                             <div className="mb-3 col-12  col-md-6 col-lg-6">
                                 <label className="form-label">Recipe Instructions</label>
-                                <input required placeholder="Description" value={ingredients} onChange={e => setIngredients(e.target.value)} type="text" className="form-control border-color" />
+                                <textarea required placeholder="Ingredients" value={ingredients} onChange={e => setIngredients(e.target.value)} class="border-color textarea form-control" ></textarea>
                             </div>
                             <div className="mb-3 col-12 col-md-6 col-lg-6">
                                 <label className="form-label">Recipe Ingredients </label>
-                                <input required placeholder="Ingredients" value={instructions} onChange={e => setInstructions(e.target.value)} className="border-color form-control" />
+                                <textarea placeholder="instructions" required value={instructions} onChange={e => setInstructions(e.target.value)} class="border-color textarea form-control" ></textarea>
                             </div>
                             <div className="mb-3 col-12  col-md-6 col-lg-6">
                                 <label className="form-label">Services</label>
@@ -86,7 +85,7 @@ const AddRecipe = () => {
                     </fieldset>
                 </form>
             </div>
-        </div>
+        </>
 
     )
 }

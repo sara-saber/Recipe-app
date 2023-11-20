@@ -11,7 +11,7 @@ const Home = () => {
         deleteItem('http://localhost:3001/Recipe/', id).then()
     }
     return (
-        <div>
+        <>
             <div className="row mx-0">
                 {recipes ?
                     recipes.map((recipe) => (
@@ -21,7 +21,7 @@ const Home = () => {
                     ))
                     : null}
             </div>
-        </div>
+        </>
 
 
     );
