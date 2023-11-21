@@ -9,7 +9,7 @@ const RecipeCard = (prop) => {
 
     return (
         <Card className="card_item" >
-            <Card.Img className="card_img" variant="top" src="https://m.media-amazon.com/images/I/81GSugDA8AL._SL1500_.jpg" />
+            <Card.Img className="card_img" variant="top" src="https://myfoodbook.com.au/sites/default/files/styles/card_xw_wp/public/recipe_photo/Mush20152729_0.jpg" />
             <Card.Body className="card_body">
                 <Card.Title className="card_title">{prop.title}</Card.Title>
                 <Card.Text className="card_text">

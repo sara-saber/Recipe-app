@@ -288,39 +288,43 @@ p {
 
 
 .card {
-    position: relative;
-    border-radius: 30px;
-    margin: 10% 15%;
-    padding: 0px;
-    align-items: center;
-    background-color: #ebece9;
+    border: 0;
+    border-radius: 10px;
+}
 
+.card_width {
+    width:300px;
+    margin: 10px;
 }
 
 .card_body {
     z-index: 1;
     position: relative;
-    top: -50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     width: 100%;
     margin: 0px;
     padding: 5px;
     background-color: #ebece9;
-    height: auto;
+    height: 140px;
 }
 
 .card_img {
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     aspect-ratio: 1/1;
     z-index: 1;
 }
 
 .card_title {
+    font-size: 15px;
     margin: 2px;
     color: #157691;
 }
 
 .card_text {
+    min-height: 30px;
+    max-height: 60px;
     margin: 5px 0px;
     font-size: 15px;
     padding: 10px 0px;
@@ -329,14 +333,14 @@ p {
     padding-right: 15px;
     color: #565656;
     overflow: hidden;
-    height: auto;
     word-wrap: break-word;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .card_link {
     position: relative;
     bottom: 2px;
-    padding: 15px;
     margin-top: 20px;
     color: #157691;
 }
@@ -366,6 +370,7 @@ thead {
 
     border-bottom-width: 0px
 }
+
 
 .offcanvas-start {
     width: 500px;
@@ -425,7 +430,7 @@ tbody {
     }
 
     .card_title {
-        font-size: 1rem;
+        font-size: 14px;
     }
 
     .offcanvas-header h5 a {
@@ -469,6 +474,7 @@ tbody {
         background-color: #242526;
     }
 
+
     .card_img {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -480,7 +486,7 @@ tbody {
         margin: 10% 8%;
         padding: 0px;
         align-items: center;
-        background-color: #ebece9;
+        box-shadow: 0 0 1vw 1px rgba(0 0 0 / 10%);
     }
 
     .wrapperdiv {
@@ -512,6 +518,12 @@ tbody {
     .nav-links li a:hover {
         background: none;
     }
+
+    .card_width {
+        width: 157px;
+        margin: auto;
+    }
+
 }
 
 input[placeholder] {
@@ -621,7 +633,7 @@ input:hover {
 }
 
 .app-container {
-    margin-top: 130px;
+    margin-top: 5%;
     margin-bottom: 5%;
     z-index: 1;
 }
@@ -660,13 +672,16 @@ input:hover {
         margin-top: 15%;
 
     }
+    .card_width {
+        width: 200px;
+    }
 
 
 }
 
 @media screen and (min-width:320px) and (max-width:756px) {
     nav {
-        padding: 0px 4%;
+        padding: 0px 10%;
     }
 
     .wrapper .logo a {
@@ -707,11 +722,6 @@ input:hover {
         width: 40% !important;
     }
 
-    .card_img {
-        aspect-ratio: 2/3;
-
-    }
-
     .footer {
         height: 4%;
     }
@@ -728,6 +738,13 @@ input:hover {
 
 .recipe-table th {
     width: 1%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+
 }
 
 @media screen and (min-width:320px) and (max-width:1080px) {

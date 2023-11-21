@@ -27,15 +27,15 @@ const RecipeModal = (prop) => {
                                         </div>
                                         <div className="mb-3 col-12  col-md-6 col-lg-6">
                                             <label className="form-label">Recipe Decription</label>
-                                            <input required placeholder="Description" value={prop.recipe?.description} name="description" onChange={handleChange} type="text" className="form-control border-color" />
+                                            <textarea required placeholder="Description" value={prop.recipe?.description} name="description" onChange={handleChange} type="text" className="form-control border-color" />
                                         </div>
                                         <div className="mb-3 col-12  col-md-6 col-lg-6">
                                             <label className="form-label">Recipe Instructions</label>
-                                            <input required placeholder="Description" value={prop.recipe?.ingredients} name="ingredients" onChange={handleChange} type="text" className="form-control border-color" />
+                                            <textarea required placeholder="Description" value={prop.recipe?.ingredients} name="ingredients" onChange={handleChange} type="text" className="form-control border-color" />
                                         </div>
                                         <div className="mb-3 col-12 col-md-6 col-lg-6">
                                             <label className="form-label">Recipe Ingredients </label>
-                                            <input required placeholder="Ingredients" value={prop.recipe?.instructions} name="instructions" onChange={handleChange} className="border-color form-control" />
+                                            <textarea required placeholder="Ingredients" value={prop.recipe?.instructions} name="instructions" onChange={handleChange} className="border-color form-control" />
                                         </div>
                                         <div className="mb-3 col-12  col-md-6 col-lg-6">
                                             <label className="form-label">Services</label>

@@ -12,10 +12,10 @@ const Home = () => {
     }
     return (
         <>
-            <div className="row mx-0">
+            <div className="row">
                 {recipes ?
                     recipes.map((recipe) => (
-                        <div className="col-6 col-sm-6 col-md-4 col-lg-3">
+                        <div className="col-6 col-sm-6 col-md-4 col-lg-3 card_width">
                             <RecipeCard key={recipe.id} deleteItem={removeItem} title={recipe.title} description={recipe.description} id={recipe.id} ></RecipeCard>
                         </div>
                     ))
