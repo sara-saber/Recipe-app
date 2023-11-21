@@ -39,7 +39,7 @@ const Recipes = () => {
     }
     return (
         <>
-            <div style={{ position: "relative", padding: '5%' }}>
+            <div style={{ position: "relative", padding: '2%' }}>
                 <div className="table recipe-table">
                     <table style={{ position: "relative" }} className="table table-striped">
                         <thead>

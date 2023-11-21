@@ -30,8 +30,8 @@ const Header = () => {
         <div className="offcanvas-body">
           <ul className="nav-links">
             <li style={{ backgroundColor: "#fff" }}><Link to="/home">Home</Link></li>
-            <li style={{ backgroundColor: "#fff" }}><Link to="/add" className="desktop-item"  > Add Recipe</Link></li>
-            <li style={{ backgroundColor: "#fff" }}><Link to="/recipes" className="desktop-item"  > Recipes</Link></li>
+            <li style={{ backgroundColor: "#fff" }}><Link to="/add"> Add Recipe</Link></li>
+            <li style={{ backgroundColor: "#fff" }}><Link to="/recipes"> Recipes</Link></li>
           </ul>
         </div>
       </div>

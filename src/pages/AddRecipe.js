@@ -20,6 +20,12 @@ const AddRecipe = () => {
         e.preventDefault()
     }
     const cancel = () => {
+        setTitle('')
+        setDescription('')
+        setIngredients('')
+        setServices('')
+        setTime('')
+        setInstructions('')
         history.push('/home')
     }
     return (

@@ -8,7 +8,7 @@ const RecipeModal = (prop) => {
     }
 
     return (
-        <div className="modal fade" id="updateModal" style={{ marginTop: "8%" }} tabindex="3">
+        <div className="modal fade" id="updateModal"  >
             {
                 <div className="modal-dialog">
                     <div className="modal-content">
