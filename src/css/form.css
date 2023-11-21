@@ -6,7 +6,7 @@ input[placeholder]{
 input::selection{
   color: #157691;
 }
-input:hover{
+input ,textarea:hover{
   border: 1px solid #aa2c52;
 }
 
@@ -14,6 +14,7 @@ input:hover{
   background-color: #ebf1f3;
   text-align: left;
 }
+
 /* .content {
   padding-top: 1%;
   position: absolute;
