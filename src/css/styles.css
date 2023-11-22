@@ -293,7 +293,7 @@ p {
 }
 
 .card_width {
-    width:300px;
+    width: 318px;
     margin: 10px;
 }
 
@@ -418,6 +418,29 @@ tbody {
     border-top: 0;
 }
 
+.recipe-table {
+    padding: 5px;
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: beige;
+    box-shadow: 3px 4px 18px 0px #1576
+}
+
+.recipe-table th {
+    width: 1%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.home-container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 @media screen and (max-width:425px) {
     .wrapper .logo a {
         color: #f2f2f2;
@@ -474,16 +497,8 @@ tbody {
         background-color: #242526;
     }
 
-
-    .card_img {
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        aspect-ratio: 2/3;
-    }
-
     .card {
-        border-radius: 20px;
-        margin: 10% 8%;
+        margin: 10px 1px;
         padding: 0px;
         align-items: center;
         box-shadow: 0 0 1vw 1px rgba(0 0 0 / 10%);
@@ -520,9 +535,19 @@ tbody {
     }
 
     .card_width {
-        width: 157px;
+        width: 50%;
         margin: auto;
     }
+
+    .home-container {
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .card_body {
+        height: 120px;
+    }
+
 
 }
 
@@ -633,7 +658,7 @@ input:hover {
 }
 
 .app-container {
-    margin-top: 5%;
+    margin-top: 100px;
     margin-bottom: 5%;
     z-index: 1;
 }
@@ -657,31 +682,29 @@ input:hover {
         top: 9%;
     }
 
-    .app-container {
+    /* .app-container {
         margin-top: 25%;
 
-    }
+    } */
 }
 
-@media screen and (min-width:426px) and (max-width:1080px) {
+@media screen and (min-width:425px) and (max-width:1024px) {
     .modal {
         top: 8%;
     }
-
-    .app-container {
-        margin-top: 15%;
-
+    .home-container {
+        margin-left: 0%;
+        margin-right: 0%;
     }
     .card_width {
-        width: 200px;
+        width: 198px;
     }
-
 
 }
 
 @media screen and (min-width:320px) and (max-width:756px) {
     nav {
-        padding: 0px 10%;
+        padding: 0px 5%;
     }
 
     .wrapper .logo a {
@@ -727,25 +750,6 @@ input:hover {
     }
 }
 
-
-.recipe-table {
-    padding: 5px;
-    background-color: #ffffff;
-    width: 100%;
-    box-shadow: beige;
-    box-shadow: 3px 4px 18px 0px #1576
-}
-
-.recipe-table th {
-    width: 1%;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 5%;
-
-}
 
 @media screen and (min-width:320px) and (max-width:1080px) {
     .recipe-table {
