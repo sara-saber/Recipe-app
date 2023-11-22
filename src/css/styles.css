@@ -242,10 +242,9 @@ nav .wrapper {
 }
 
 .card1 {
-    position: relative;
+    margin: auto;
     border-radius: 10px;
-    width: 35%;
-    margin: 10% 30%;
+    width: 70%;
     padding: 0px;
     height: 70%;
     box-shadow: 5px 5px 5px 5px #02474d;
@@ -260,6 +259,7 @@ nav .wrapper {
 }
 
 .card1_body {
+    background-color: #fff;
     position: relative;
     top: 4%;
     width: 100%;
@@ -275,26 +275,47 @@ nav .wrapper {
 }
 
 .card1-title {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: medium;
     margin-bottom: 0.5rem;
 }
 
-p {
+.card1-header{
+    margin: 0;
+    border: 1px solid #cccccc;
+    background-color: #f7f7f7;
+    height: 10%;
+    width: 100%;
+}
+.card1-item{
+    text-align: left;
+    position: relative;
+    display: inline;
+    font-style:normal;
+    margin-left: 159px;
+    background-color: rgb(102, 59, 59);
+    width: auto;
+}
+.card1-item span{
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.card-text{
     margin-top: 0;
-    color: #e0e0e0;
+    color: #02474d;
     margin-bottom: 1rem;
 }
 
 
 .card {
+    max-width: 350px;
     border: 0;
     border-radius: 10px;
 }
 
 .card_width {
-    width: 318px;
-    margin: 10px;
+    margin-top: 25px;
 }
 
 .card_body {
@@ -343,10 +364,6 @@ p {
     bottom: 2px;
     margin-top: 20px;
     color: #157691;
-}
-
-.table>:not(caption)>*>* {
-    padding: 25px;
 }
 
 
@@ -401,7 +418,7 @@ thead {
 
 .modal-footer {
     flex-wrap: nowrap;
-}
+}                                                                                                                                                                                                              
 
 .btn-close {
     padding: 0.5rem 0.5rem;
@@ -426,8 +443,8 @@ tbody {
     box-shadow: 3px 4px 18px 0px #1576
 }
 
-.recipe-table th {
-    width: 1%;
+.table>tbody {
+    vertical-align:middle;
 }
 
 .row {
@@ -611,7 +628,12 @@ input:hover {
     background-color: #080808;
     color: #ffffff;
 }
-
+.btn-primary:focus {
+    border-color: #261e20;
+    background-color: #ffffff;
+    color: #157691;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+}
 
 
 .form-control {
@@ -695,9 +717,6 @@ input:hover {
     .home-container {
         margin-left: 0%;
         margin-right: 0%;
-    }
-    .card_width {
-        width: 198px;
     }
 
 }

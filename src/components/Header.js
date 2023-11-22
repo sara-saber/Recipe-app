@@ -6,7 +6,7 @@ const Header = () => {
       <nav>
         <div className="wrapper">
           <div className='wrapperdiv'>
-            <a className="wrapperbtn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <a className="wrapperbtn"  data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
               =
             </a>
           </div>
@@ -22,7 +22,7 @@ const Header = () => {
         </div>
       </nav>
 
-      <div className="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div className="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"  aria-labelledby="offcanvasExampleLabel">
         <div className="offcanvas-header">
           <h5 className="offcanvas-title" id="offcanvasExampleLabel"><Link to="/">Recipe Book</Link> </h5>
           <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>

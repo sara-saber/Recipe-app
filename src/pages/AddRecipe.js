@@ -62,20 +62,20 @@ const AddRecipe = () => {
                             </div>
                             <div className="mb-3 col-12  col-md-6 col-lg-6">
                                 <label className="form-label">Recipe Instructions</label>
-                                <textarea required placeholder="Ingredients" value={ingredients} onChange={e => setIngredients(e.target.value)} class="border-color textarea form-control" ></textarea>
+                                <textarea required placeholder="instructions" value={ingredients} onChange={e => setIngredients(e.target.value)} class="border-color textarea form-control" ></textarea>
                             </div>
                             <div className="mb-3 col-12 col-md-6 col-lg-6">
                                 <label className="form-label">Recipe Ingredients </label>
-                                <textarea placeholder="instructions" required value={instructions} onChange={e => setInstructions(e.target.value)} class="border-color textarea form-control" ></textarea>
+                                <textarea placeholder="Ingredients" required value={instructions} onChange={e => setInstructions(e.target.value)} class="border-color textarea form-control" ></textarea>
                             </div>
                             <div className="mb-3 col-12  col-md-6 col-lg-6">
                                 <label className="form-label">Services</label>
-                                <input required value={services} onChange={e => setServices(e.target.value)} type="number" className="border-color form-control" placeholder="services" />
+                                <input required value={services} onChange={e => setServices(e.target.value)} min={1} type="number" className="border-color form-control" placeholder="services" />
 
                             </div>
                             <div className="mb-3 col-12 col-md-6 col-lg-6">
-                                <label className="form-label">Time</label>
-                                <input required value={time} onChange={e => setTime(e.target.value)} type="number" className="border-color form-control" placeholder="time" />
+                                <label className="form-label">Time(minutes)</label>
+                                <input required value={time} onChange={e => setTime(e.target.value)} min={1} max={60} type="number" className="border-color form-control" placeholder="Time" />
                             </div>
                         </div>
                         <div className="row">
